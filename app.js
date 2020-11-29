@@ -1,7 +1,12 @@
-console.log("Script is working from js file ");
+var btnTranslate = document.querySelector("#btn-translate");
 
-alert("This is an alert") 
+var textinput = document.querySelector('#txt-input');
 
-var name = prompt("Username")
+console.log(Textinput)
 
-alert(name)
+function clickEventHandler(){
+    console.log("Clicked");
+    console.log("input",textinput)
+}
+
+btnTranslate.addEventListener("click",clickEventHandler)
