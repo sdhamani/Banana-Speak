@@ -1,0 +1,89 @@
+ @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: 'Indie Flower', cursive;
+}
+
+.center{
+    margin-left:25%
+}
+
+
+
+.section{
+    margin: auto;
+}
+textarea {
+    align-items: center;
+    border: 2px solid black;
+    width: 50%;
+    height: 18vh;
+    display: block;
+    margin: auto;
+    margin-top: 3rem;
+    
+}
+
+
+#output {
+    align-items: center;
+    border: 1px solid black;
+    width: 50%;
+    height: 18vh;
+    display: block;
+    margin: auto;
+    margin-top: 0.5rem;
+}
+
+.heading{
+    display: block;
+    background-color: rgba(255, 174, 0, 0.816);
+    color: black;
+    height: 4rem;
+    text-align: center;
+    padding-top: 2%;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+::placeholder {
+    font-size: 1rem;
+}
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    background-color: rgba(255, 174, 0, 0.816);
+    color: black;
+    text-align: center;
+    padding-top: 0.5%;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.button{
+    margin-top: 1rem;
+    text-align: center;
+    background-color: rgba(255, 174, 0, 0.816);
+    color: black;
+    border: black;
+    height: auto;
+    width: auto;
+    border-radius: 49px;
+    box-shadow: 28px 28px 56px #00e0e0, -28px -28px 56px #00ffff; 
+    margin-left: 24%;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    box-shadow: 5px 10px 8px rgb(231, 220, 220);
+    font-size: 1rem;
+}

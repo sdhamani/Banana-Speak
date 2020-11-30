@@ -6,33 +6,31 @@ var outputtext = document.querySelector("#output")
 
 var serverUrl = "https://api.funtranslations.com/translate/minion.json";
 
-function generateServerUrl(text)
-{
-    return serverUrl+ "?text="+ text;
+function generateServerUrl(text) {
+    return serverUrl + "?text=" + text;
 }
 
 
 
 
-function errorHandler(error)
-{
-    console.log ("Error Occured - " , error)
+function errorHandler(error) {
+    console.log("Error Occurred - ", error)
+    alert("Some Error Occurred")
 }
 
 
-function clickEventHandler(){
+function clickEventHandler() {
 
-    var url =  generateServerUrl(textinput.value);
+    var url = generateServerUrl(textinput.value);
 
     fetch(url)
         .then(response => response.json())
-        .then(json => 
-            {
+        .then(json => {
             var translatedText = json.contents.translated;
             outputtext.innertext = translatedText;
-            })
+        })
         .catch(errorHandler)
 
 }
 
-btnTranslate.addEventListener("click",clickEventHandler)
+btnTranslate.addEventListener("click", clickEventHandler)
