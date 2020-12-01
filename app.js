@@ -12,7 +12,6 @@ function generateServerUrl(text) {
 
 
 
-
 function errorHandler(error) {
     console.log("Error Occurred - ", error)
     alert("Some Error Occurred")
@@ -25,9 +24,9 @@ function clickEventHandler() {
 
     fetch(url)
         .then(response => response.json())
-        .then(json => {
+        .then(json => { 
             var translatedText = json.contents.translated;
-            outputtext.innertext = translatedText;
+            outputtext.innerText = translatedText;
             console.log(translatedText)
         })
         .catch(errorHandler)
