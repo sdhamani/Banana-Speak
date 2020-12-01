@@ -31,13 +31,13 @@ textarea {
 
 
 #output {
-    align-items: center;
+    align-items: center; 
     border: 1px solid black;
     width: 50%;
     height: 18vh;
     display: block;
     margin: auto;
-    margin-top: 0.5rem;
+    margin-top: 0.5rem; 
 }
 
 .heading{
