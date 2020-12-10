@@ -30,7 +30,7 @@ function clickEventHandler() {
             console.log(translatedText)
         })
         .catch(errorHandler)
-
+x
 }
 
 btnTranslate.addEventListener("click", clickEventHandler)
